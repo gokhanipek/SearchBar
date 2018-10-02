@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-image: url('./assets/images/bg.png');
+  background-size: cover;
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+
+.App {
+  margin: 0 auto;
+}
+
+.header {
+  display: block;
+  width: 100%;
+}
+
+.header img {
+  width: 400px;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.AutoComplete {
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+}
+
+.AutoComplete input {
+  background-color: #fff;
+  padding: .4em;
+  font-size: 18px;
+  color: #7f8c8d;
+  letter-spacing: 0.1em;
+  display: block;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+.Suggestions {
+  list-style: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+}
+
+.Suggestions li {
+  padding: .8em 1em;
+}
+
+.Suggestions li.active {
+  padding: .8em 1em;
+  background-color: #bdc3c7;
+}
+
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 3em;
+}
